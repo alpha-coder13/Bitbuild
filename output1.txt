@@ -1,0 +1,35 @@
+2022-08-14T09:44:29.555000Z TestFramework (INFO): Initializing test directory /tmp/bitcoin_func_test_pn7a71kr
+2022-08-14T09:44:33.445000Z TestFramework (INFO): Starting test!
+2022-08-14T09:44:33.445000Z TestFramework (INFO): Create some blocks
+2022-08-14T09:44:33.458000Z TestFramework (INFO): Wait for node1 to reach current tip (height 11) using RPC
+2022-08-14T09:44:33.514000Z TestFramework (INFO): Connect node2 and node1
+2022-08-14T09:44:33.599000Z TestFramework (INFO): Wait for node2 to receive all the blocks from node1
+2022-08-14T09:44:33.613000Z TestFramework (INFO): Add P2P connection to node2
+2022-08-14T09:44:33.723000Z TestFramework (INFO): Test that node2 propagates all the blocks to us
+2022-08-14T09:44:33.775000Z TestFramework (INFO): Check that each block was received only once
+2022-08-14T09:44:33.775000Z TestFramework (INFO): 
+
+
+ Mining a block at node one and sending it to node to 
+
+
+
+
+2022-08-14T09:44:33.779000Z TestFramework (INFO): counting node 2's height
+2022-08-14T09:44:33.781000Z TestFramework (INFO): node 2's height : 11
+2022-08-14T09:44:33.781000Z TestFramework (INFO): counting node 1's height
+2022-08-14T09:44:33.783000Z TestFramework (INFO): node 1's height : 11
+2022-08-14T09:44:33.890000Z TestFramework (INFO): generating a block in node 1
+2022-08-14T09:44:34.924000Z TestFramework (INFO): counting node 1's height
+2022-08-14T09:44:34.926000Z TestFramework (INFO): node 1's height : 12
+2022-08-14T09:44:34.926000Z TestFramework (INFO): syncing all nodes value
+2022-08-14T09:44:34.941000Z TestFramework (INFO): disconnecting node 1
+2022-08-14T09:44:34.946000Z TestFramework (INFO): connecting node 2
+2022-08-14T09:44:35.052000Z TestFramework (INFO): fetching all nodes from node 2
+2022-08-14T09:44:35.103000Z TestFramework (INFO): checking for count of all blocks of node 2 to be 1
+2022-08-14T09:44:35.103000Z TestFramework (INFO): counting node 2's height
+2022-08-14T09:44:35.105000Z TestFramework (INFO): node 2's height : 12
+2022-08-14T09:44:35.107000Z TestFramework (INFO): The new block is successfully added and the test is working correctly
+2022-08-14T09:44:35.159000Z TestFramework (INFO): Stopping nodes
+2022-08-14T09:44:35.719000Z TestFramework (INFO): Cleaning up /tmp/bitcoin_func_test_pn7a71kr on exit
+2022-08-14T09:44:35.719000Z TestFramework (INFO): Tests successful
